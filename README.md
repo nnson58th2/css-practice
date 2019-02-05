@@ -1,6 +1,6 @@
-# Loading flashing
+# Advanced css practice, css training
 
-Thực hành css flex box, css transform, css transition, css animation<br />
+Thực hành: css flex box, css transform, css transition, css animation, repository<br />
 
 Thực hiện: Nguyễn Như Sơn<br />
 Fb: https://www.facebook.com/sontocxoan.congnghe<br />
