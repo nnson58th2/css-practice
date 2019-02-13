@@ -1,0 +1,60 @@
+/**
+* [author    : Nguyễn Như Sơn]
+* [Completion date : 13/02/2019]
+* [Facebook  : https://www.facebook.com/sontocxoan.congnghe]
+* [Instagram : https://www.instagram.com/nnsonth.98]
+**/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E84118;
+}
+
+.search-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #2F3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+
+.search-box:hover > .search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-box:hover > .search-btn {
+    background-color: white; 
+}
+
+.search-btn {
+    text-decoration: none;
+    color: #E84118;
+    float: right;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #2F3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0px; 
+    transition: .4s;
+}
