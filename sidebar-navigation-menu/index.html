@@ -1,15 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Menu điều hướng thanh bên</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Menu điều hướng thanh bên</title>
 
-    <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
-    <script src="./js/javascript.js"></script>
+  <div class="container">
+    <nav class="navbar" id="navId">
+      <button type="button" onclick="myFunction(this)" class="toggle-collapse" id="toggle-button">
+        <div class="toggle-icon">
+          <div class="navicon-line"></div>
+          <div class="navicon-line"></div>
+          <div class="navicon-line"></div>
+        </div>
+      </button>
+      <ul class="side-nav">
+        <li class="nav-item">
+          <a href="#" class="site-name">Menu responsive</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Trang chủ</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Tính năng</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Giá cả</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Liên hệ chúng tôi</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fa fa-facebook-f"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-youtube"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>  
+
+  <script>
+    function myFunction(e){    
+      e.classList.toggle('show');
+
+      var nav = document.getElementById('navId'),
+      Style = window.getComputedStyle(nav),
+      left = Style.getPropertyValue('left');
+
+      if (left == '0px'){
+          nav.style.left = '-260px';
+      } else {
+          nav.style.left = '0px';
+      }
+    }
+  </script>
 </body>
 </html>
