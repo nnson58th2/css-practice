@@ -52,16 +52,14 @@
 
   <script>
     function myFunction(e){    
-      e.classList.toggle('show');
-
       var nav = document.getElementById('navId'),
       Style = window.getComputedStyle(nav),
       left = Style.getPropertyValue('left');
 
-      if (left == '0px'){
-          nav.style.left = '-260px';
+      if (left == '-260px'){
+        nav.style.left = '0px';
       } else {
-          nav.style.left = '0px';
+          nav.style.left = '-260px';
       }
     }
   </script>
