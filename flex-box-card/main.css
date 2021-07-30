@@ -1,0 +1,181 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+/* using rem unit */
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+input,
+button,
+textarea,
+select {
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+input {
+  line-height: normal;
+}
+button {
+  cursor: pointer;
+}
+
+/* Card box */
+body {
+  max-width: 1120px;
+  margin: 50px auto 0;
+}
+
+.cards {
+  --spacing: 25px;
+  --columns: 4;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--spacing));
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  overflow: hidden;
+  width: calc(calc(100% / var(--columns)) - var(--spacing));
+  margin-left: var(--spacing);
+  margin-bottom: var(--spacing);
+}
+
+.card-image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-top {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 25px;
+}
+
+.card-title {
+  font-weight: 500;
+  margin-bottom: 25px;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+
+.card-user {
+  display: flex;
+  align-items: center;
+}
+
+.card-user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 100rem;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.card-user-info {
+  padding-left: 20px;
+  flex: 1;
+}
+
+.card-user-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.card-user-top ion-icon {
+  color: #20e3b2;
+  margin-left: 5px;
+}
+
+.card-user-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.card-user-game {
+  color: #999;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  border-top: 1px solid #eee;
+}
+
+.card-live {
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  color: white;
+  border-radius: 10px;
+  background-color: #ff6651;
+}
+
+.card-live span {
+  margin-left: 10px;
+}
+
+.card-watching {
+  font-size: 13px;
+  font-weight: 300;
+  color: #999;
+}
+
+.card-user,
+.card-bottom {
+  margin-top: auto;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .cards {
+    --spacing: 15px;
+    --columns: 1;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .cards {
+    --columns: 2;
+  }
+}
